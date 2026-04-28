@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Introduccion a GIT</h2>
+    <p>Haciendo un cambio desde la nube</p>
+</body>
+<script>
+    // con la etiqueta script hacemos referencia que lo que esta dentro es codigo javascript
+
+    /** 
+     * calcular descuento
+     * 2 variables:
+     *      - una variable que contenga el precio
+     *      - una varibale que contenga el descuento
+     * devolver el descuento aplicado en el producto
+    */
+
+    // estructura secuencial
+    let precio_original = 25.50; //double
+    let descuento = 15; //int
+
+    let total_descuento = precio_original - ((precio_original * descuento) / 100);
+    //let precio_total = precio_original - total_descuento;
+
+    // concatenando el texto con la variable
+    console.log("El precio a pagar $" + total_descuento);
+
+    // otra forma `` y ${} (template literals)
+    console.log(`El precio a pagar $${total_descuento}`);
+</script>
+<script src="javascript/estructuras_condicionales.js"></script>
+</html>
