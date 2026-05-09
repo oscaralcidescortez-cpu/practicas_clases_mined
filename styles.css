@@ -1,0 +1,278 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #1f2937;
+  background: #f8fafc;
+  line-height: 1.6;
+}
+
+body {
+  margin: 0;
+}
+
+.site-header,
+.hero-banner,
+.info-section,
+.site-footer,
+.section {
+  width: min(1200px, 100%);
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.brand h1 {
+  margin: 0;
+  font-size: 1.7rem;
+}
+
+.brand p {
+  margin: 0.25rem 0 0;
+  color: #4b5563;
+}
+
+.main-nav {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #1f2937;
+  font-weight: 600;
+}
+
+.hero-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  background: linear-gradient(135deg, #0f172a 0%, #2563eb 100%);
+  color: white;
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.hero-content {
+  max-width: 720px;
+}
+
+.hero-content h2 {
+  margin: 0 0 1rem;
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.hero-content p {
+  margin: 0 0 1.75rem;
+  font-size: 1.05rem;
+  color: #e2e8f0;
+}
+
+.btn-primary,
+.btn-secondary {
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  padding: 0.85rem 1.75rem;
+  font-size: 1rem;
+}
+
+.btn-primary {
+  background: #38bdf8;
+  color: #0f172a;
+}
+
+.btn-secondary {
+  background: #1f2937;
+  color: white;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.section-heading h3 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.section-heading p {
+  margin: 0.5rem auto 0;
+  max-width: 680px;
+  color: #4b5563;
+}
+
+.niveles-section .level-cards {
+  display: flex;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.level-card {
+  flex: 1 1 220px;
+  min-width: 200px;
+  background: white;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 12px 32px rgba(15, 23, 42, 0.08);
+}
+
+.level-card h4 {
+  margin-top: 0;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.25rem;
+}
+
+.card {
+  background: white;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 12px 32px rgba(15, 23, 42, 0.08);
+}
+
+.card h4 {
+  margin-top: 0;
+}
+
+.trivia-section {
+  padding: 0 1rem 2rem;
+}
+
+.trivia-card {
+  background: white;
+  border-radius: 1rem;
+  padding: 1.75rem;
+  box-shadow: 0 12px 32px rgba(15, 23, 42, 0.08);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.question-text {
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.answers-grid {
+  display: grid;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.answer-btn {
+  width: 100%;
+  background: #e2e8f0;
+  color: #1f2937;
+  border: 2px solid transparent;
+  border-radius: 0.9rem;
+  padding: 0.95rem 1rem;
+  text-align: left;
+  cursor: pointer;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.answer-btn:hover {
+  transform: translateY(-1px);
+  border-color: #38bdf8;
+}
+
+.answer-btn.correct {
+  background: #bbf7d0;
+  border-color: #22c55e;
+}
+
+.answer-btn.wrong {
+  background: #fecaca;
+  border-color: #ef4444;
+}
+
+.trivia-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.info-section {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+
+.info-column {
+  flex: 1 1 220px;
+  min-width: 220px;
+  padding: 1.25rem;
+  background: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 12px 32px rgba(15, 23, 42, 0.06);
+}
+
+.info-column h4 {
+  margin-top: 0;
+}
+
+.site-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.25rem 1rem;
+  background: #0f172a;
+  color: white;
+}
+
+@media (max-width: 900px) {
+  .hero-banner {
+    padding: 3rem 1rem;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .main-nav {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .hero-banner {
+    min-height: 50vh;
+    padding: 2.5rem 1rem;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .trivia-footer {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
