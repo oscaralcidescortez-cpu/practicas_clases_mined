@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Academia JS - Primer Año</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <h1>Academia JS</h1>
+      <p>Aprende a programar paso a paso</p>
+    </div>
+    <nav class="main-nav">
+      <a href="#hero">Inicio</a>
+      <a href="#niveles">Niveles</a>
+      <a href="#galeria">Juegos</a>
+      <a href="#info">Acerca</a>
+    </nav>
+  </header>
+
+  <section id="hero" class="hero-banner">
+    <div class="hero-content">
+      <h2>La academia para futuros desarrolladores</h2>
+      <p>Explora niveles, retos y una trivia divertida para conectar con JavaScript.</p>
+      <a class="btn-primary" href="#galeria">Comenzar</a>
+    </div>
+  </section>
+
+  <section id="niveles" class="section niveles-section">
+    <div class="section-heading">
+      <h3>Niveles de aprendizaje</h3>
+      <p>Desde lo básico hasta retos con lógica, para estudiantes de primer año.</p>
+    </div>
+    <div class="level-cards">
+      <article class="level-card">
+        <h4>Nivel 1</h4>
+        <p>Fundamentos de variables, tipos y operaciones.</p>
+      </article>
+      <article class="level-card">
+        <h4>Nivel 2</h4>
+        <p>Condicionales y estructuras de control.</p>
+      </article>
+      <article class="level-card">
+        <h4>Nivel 3</h4>
+        <p>Bucle y repetición para automatizar tareas.</p>
+      </article>
+      <article class="level-card">
+        <h4>Nivel 4</h4>
+        <p>Funciones, eventos y programación interactiva.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="galeria" class="gallery-section">
+    <div class="section-heading">
+      <h3>Retos y juegos</h3>
+      <p>Elige un juego para poner a prueba tus conocimientos.</p>
+    </div>
+    <div class="gallery-grid">
+      <article class="card">
+        <h4>Trivia JavaScript</h4>
+        <p>Responde preguntas básicas sobre JS y gana puntos.</p>
+      </article>
+      <article class="card">
+        <h4>Juego de sintaxis</h4>
+        <p>Identifica errores y mejora tus líneas de código.</p>
+      </article>
+      <article class="card">
+        <h4>Reto de condicionales</h4>
+        <p>Practica decisiones con `if`, `else` y operadores lógicos.</p>
+      </article>
+      <article class="card">
+        <h4>Desafío de bucles</h4>
+        <p>Crea secuencias con `for`, `while` y arrays.</p>
+      </article>
+      <article class="card">
+        <h4>Proyecto mini</h4>
+        <p>Haz un bolsillo de código con DOM y eventos.</p>
+      </article>
+      <article class="card">
+        <h4>Autoevaluación</h4>
+        <p>Comprueba tus conocimientos con ejercicios cortos.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="trivia-section">
+    <div class="section-heading">
+      <h3>Trivia interactiva</h3>
+      <p>Responde y descubre tu puntaje en tiempo real.</p>
+    </div>
+    <div class="trivia-card">
+      <div id="question-area">
+        <p class="question-text"></p>
+      </div>
+      <div id="answers" class="answers-grid"></div>
+      <div class="trivia-footer">
+        <button id="next-btn" class="btn-secondary">Siguiente pregunta</button>
+        <p>Puntaje: <span id="score">0</span></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="info" class="info-section">
+    <div class="info-column">
+      <h4>País</h4>
+      <p>El Salvador</p>
+    </div>
+    <div class="info-column">
+      <h4>Carrera</h4>
+      <p>Desarrollo de Software</p>
+    </div>
+    <div class="info-column">
+      <h4>Año</h4>
+      <p>Primer año de bachillerato</p>
+    </div>
+    <div class="info-column">
+      <h4>Enfoque</h4>
+      <p>JavaScript, lógica y proyectos prácticos.</p>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <p>Academia JS • Creado para estudiantes de desarrollo de software</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
