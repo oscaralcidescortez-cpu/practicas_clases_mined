@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rutas Centro</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header" id="top">
+    <nav class="navbar">
+      <a class="brand" href="#top">Rutas Centro</a>
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-links">
+        <a href="#nosotros">Nosotros</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#formulario">Reserva</a>
+        <a href="#footer">Contacto</a>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow">Explora Centroamérica</p>
+        <h1>Viajes sostenibles por Panamá, Costa Rica y Guatemala</h1>
+        <p>Planifica tu próxima aventura con paquetes personalizados, soporte local y experiencias auténticas.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#formulario">Reserva ahora</a>
+          <a class="btn btn-secondary" href="#servicios">Ver servicios</a>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section class="section" id="nosotros">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-number">01</span>
+          <h2>Nosotros</h2>
+        </div>
+        <p class="section-text">
+          En Rutas Centro diseñamos viajes a Centroamérica con enfoque cultural y ecológico. Nuestro equipo ayuda a jóvenes aventureros y familias a descubrir playas, selvas y ciudades coloniales con seguridad y respeto por las comunidades.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="servicios">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-number">02</span>
+          <h2>Servicios</h2>
+        </div>
+        <div class="service-grid">
+          <article class="card service-card" data-service="paquetes">
+            <h3>Paquetes a la medida</h3>
+            <p>Itinerarios personalizados para tus fechas, presupuesto y estilo de viaje.</p>
+          </article>
+          <article class="card service-card" data-service="soporte">
+            <h3>Soporte local 24/7</h3>
+            <p>Asistencia en español y rutas seguras con guías certificados en cada país.</p>
+          </article>
+          <article class="card service-card" data-service="eco">
+            <h3>Viajes sostenibles</h3>
+            <p>Experiencias ecológicas con hospedaje responsable y actividades amigables con la naturaleza.</p>
+          </article>
+        </div>
+        <div class="service-detail" id="service-detail">
+          <h3>Haz clic en un servicio para saber más</h3>
+          <p>Descubre cómo adaptamos cada viaje para que sea único, educativo y responsable.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="formulario">
+      <div class="container form-area">
+        <div class="form-panel">
+          <div class="section-header">
+            <span class="section-number">03</span>
+            <h2>Reserva tu viaje</h2>
+          </div>
+          <p>Rellena el formulario y uno de nuestros expertos te enviará una propuesta personalizada.</p>
+
+          <form id="travel-form" novalidate>
+            <div class="form-group">
+              <label for="name">Nombre completo</label>
+              <input type="text" id="name" name="name" placeholder="Juan Pérez" required />
+              <small class="error-message"></small>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Correo electrónico</label>
+              <input type="email" id="email" name="email" placeholder="juan@correo.com" required />
+              <small class="error-message"></small>
+            </div>
+
+            <div class="form-group">
+              <label for="destination">Destino preferido</label>
+              <select id="destination" name="destination" required>
+                <option value="">Selecciona un destino</option>
+                <option value="panama">Panamá</option>
+                <option value="costa_rica">Costa Rica</option>
+                <option value="guatemala">Guatemala</option>
+              </select>
+              <small class="error-message"></small>
+            </div>
+
+            <div class="form-group">
+              <label for="travel-date">Fecha de viaje</label>
+              <input type="date" id="travel-date" name="travel-date" required />
+              <small class="error-message"></small>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Comentario o necesidad especial</label>
+              <textarea id="message" name="message" rows="4" placeholder="Dinos qué te gustaría experimentar..." required></textarea>
+              <small class="error-message"></small>
+            </div>
+
+            <div class="form-group checkbox-group">
+              <input type="checkbox" id="subscribe" name="subscribe" />
+              <label for="subscribe">Quiero recibir ofertas exclusivas</label>
+            </div>
+
+            <button class="btn btn-primary" type="submit">Enviar solicitud</button>
+          </form>
+
+          <div class="form-feedback" id="form-feedback" aria-live="polite"></div>
+          <div class="destination-summary" id="destination-summary">
+            Selecciona un destino para recibir una recomendación rápida.
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Rutas Centro</h3>
+        <p>Explora Centroamérica con respeto, comodidad y aventura constante.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#top">Inicio</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#servicios">Servicios</a>
+      </div>
+      <div class="socials">
+        <a href="#" aria-label="Instagram">Instagram</a>
+        <a href="#" aria-label="Facebook">Facebook</a>
+        <a href="#" aria-label="WhatsApp">WhatsApp</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="current-year"></span> Rutas Centro. Creado por el equipo de la agencia.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
